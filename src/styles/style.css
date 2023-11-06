@@ -1,0 +1,61 @@
+:root {
+  --DarkGray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --VeryDarkGray: hsl(0, 0%, 27%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+button {
+  outline: none;
+  background: transparent;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--DarkGray);
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  width: fit-content;
+  margin-top: 2rem;
+  min-width: 290px;
+}
+
+.btn:hover p,
+.btn:hover svg path {
+  fill: var(--DarkGray) !important;
+  color: var(--DarkGray);
+}
+
+.btn-text {
+  color: var(--Black);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 10px;
+}
+
+.btn-image {
+  width: 50px;
+}
